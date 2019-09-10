@@ -1,0 +1,146 @@
+{
+ "signatures": [
+  {
+   "keyid": "56193568c300352bb1aeacf574f3361e11c13d2ff4f0a09c5a5c9803e8ad29a0",
+   "sig": "97429aebdb375417fc80b85cce4612fc3a3b805676d8a41f12afc6709565b0b835581ad53678dc5a06d07d53fd6f8b6f0c08504a0d498c04d46ba4cdfc7dec475e03ff1c0ecd519ec144160168dbc88e41ba23050c1877225b068b9b608cfd8562ef3bd183936a6619090a4b66d942cdef42352aa411fa268fdab07313c21df09add7feef887190adc20bb98398f88870fd106c5015d347f80139741c78073e7831227453c02b25a04d3b8f58a0ff4e6f0ee014c1d43cbfbc1699ebcc4fa5cf756b8675a35b018cf87cd08923958245232e1c918b00eb3e7bcd2e74744f9757bc3e1f53b790c705c3d2961b261e3c57bf0c752c76765684e4360981f6b86b45b13bf472eb48e2339b8f553dbdb2589d901480638d46e065deb0ed00c9bf89cf1d08d5f0e19d8b29d2cc4822b77d4f49ed1828c418c05bca110bb9f1c34da07a3adf1521b3b9021535059561ea074690bdb83a0e2f910d76e44a7eb4df4118d338ca3c0ce39554f19cfc4fe1dd16826870e0312194d2d36b476b8d18a93d27847"
+  }
+ ],
+ "signed": {
+  "_type": "layout",
+  "expires": "2019-10-10T16:07:04Z",
+  "inspect": [],
+  "keys": {
+   "3b5fef71093b318e0cb04316d4d9ccca4634f5e719c55c8a53ba5184925f1912": {
+    "keyid": "3b5fef71093b318e0cb04316d4d9ccca4634f5e719c55c8a53ba5184925f1912",
+    "keyid_hash_algorithms": [
+     "sha256",
+     "sha512"
+    ],
+    "keytype": "rsa",
+    "keyval": {
+     "private": "",
+     "public": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA6juGDh/fzYbDTYLQJeMy\nYveRVCrpU3yUVxIv2SG8yXsYC37qzdfOOVSELb9Wk67BMiUBYAyD1GlmKlC/vYqE\nIYOgJ/IZ+K9pN0EFB2WG78nOLm6/p2rcEWN/VAgPxeQoDekG+xV78f/dsWNK/a+Y\ndgN15chaAzcuIgAOxnfIOegJz5oFOzC6KF2jew3L4tXdQQVISeHQqcUew61t1yGa\nT9XbC6nE3T+r9xgvQ0lvNAnOQiMgZoQ/mPE+l76VzgyEM/sQTAapQIC79ek9K6l/\nQ2TnUzDPF3uQO+D9DPLSpAZBZo9oXuvzXH2W8HOKW7hLClfgHHv6oCzVY8FKWiEt\nhcXWroNJZ30vCdyn89L3OX3fYUFH95l1myOdepOUuZ1ZhYVm4cnT49HZqF18VUQe\nc07AonXJJhkLWYrda5MCXMW7TdwrfoOyrxNvJS681AZZ4Zdh0EE0t+UCiDk7xZ+1\nYbl548MmJSO/eDTmgxVJGwUhIXBo1xd3hOYIrGaWWgf7AgMBAAE=\n-----END PUBLIC KEY-----"
+    },
+    "scheme": "rsassa-pss-sha256"
+   },
+   "7cedd7de3bcd11f6d682195f650f8c678054ae4a30457743156c97252a468360": {
+    "keyid": "7cedd7de3bcd11f6d682195f650f8c678054ae4a30457743156c97252a468360",
+    "keyid_hash_algorithms": [
+     "sha256",
+     "sha512"
+    ],
+    "keytype": "rsa",
+    "keyval": {
+     "private": "",
+     "public": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAlxODsZySG9rcXfpEbVMu\nf4MEypKa7j/pS5OlTMIdaZQbhsO/x++TxZ2dswyPL1RB9i+q14jM6e2K/mXEbOXW\naK8rtkhDqOWVpiiCEZimP4tSZWBGTFSG1572IH9rb/pveQQHbIv2UrZygm2cj+iD\nwzTcffO6hlA2Uet2RYZHltmoaKSNBLOsVYTl6Va7iBANfOd8ZHeeECWoOKupT0ZU\nL8jsZS6VC91BX2VM/ez94bI0Vps0nbYTM+s8IaDoqiqHbcdHUhWXFvfF5cllDl7i\ntgb4OzLgnQVCdsZXxfJCNWGAYGKHIprFKVgP1GVFyoCKHCuTr/W94mjZk9aW6Cod\nK/lkhQtl7dhSt6AC6nWBLVHYdqEQ1rJ/9hAL0xogiBqNxpmgp7KiCjZHF4q9UnjT\na+/TqRc6NKWkGtnB6w9FDCBlAOb4EJ2JJZJgixeSxd+R5ub8VLE6OS8K1fjvBTZ/\nvLdWXYeTRBLkxXNjUO60YvzSJGBZatU2ZyjaE56zhyVPAgMBAAE=\n-----END PUBLIC KEY-----"
+    },
+    "scheme": "rsassa-pss-sha256"
+   },
+   "8cf1c499916cb9e94247ec4b18b8b9670cc47fcf659116619517734b48a2ebbc": {
+    "keyid": "8cf1c499916cb9e94247ec4b18b8b9670cc47fcf659116619517734b48a2ebbc",
+    "keyid_hash_algorithms": [
+     "sha256",
+     "sha512"
+    ],
+    "keytype": "rsa",
+    "keyval": {
+     "private": "",
+     "public": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA2a8MdJYPtOwlscRjbv4i\nyhgQZzDpdkTfcDDVBWgm2OgjkpH11FtmhL7ROvMhGXhBialxFTwDJcQz9/axQSy2\nBVioBvwx/kTQLnPsQQBhupW7Pj5bEx/RU90RJQ0yNB4zSYPnRXU7S9iGTlJ21Inr\nm+Hkk+Yzd9PDYCXbTEVqhT3oYnP55vnoKSF7XxHvlIw2e8smo/4SavvlyxUb6BpM\noeCFc4Ds7buRny4GnrF5ZtEKuZ0/oKGsZHXLBsvfYzg+u18OAFm25TTOOYe4WMcg\nhZnRNHWVA729xnUyFdr54+o5mpw3YRAj/fjInch13fQc7LYq19jQUQGwqqZ5z8pg\nanm5ZFvBBej3zIxd6AWPIzYuTSvy6DCrNFmg9NRlnZmrslKa+0Hcot9Rva2AGXkK\nhezE2lASYG13NYs+vC0d4+rQDNNX86lPDJxw24ucbk1cpL33X2iFZgm8bPFfzlEI\nsD+CRZrg0Vxaa0/UtkbTHtgOq5aTlt1QuziIKkS2ZwqjAgMBAAE=\n-----END PUBLIC KEY-----"
+    },
+    "scheme": "rsassa-pss-sha256"
+   }
+  },
+  "readme": "",
+  "steps": [
+   {
+    "_type": "step",
+    "expected_command": [],
+    "expected_materials": [],
+    "expected_products": [
+     [
+      "CREATE",
+      "../target/demo.py"
+     ],
+     [
+      "DISALLOW",
+      "*"
+     ]
+    ],
+    "name": "develop",
+    "pubkeys": [
+     "7cedd7de3bcd11f6d682195f650f8c678054ae4a30457743156c97252a468360"
+    ],
+    "threshold": 1
+   },
+   {
+    "_type": "step",
+    "expected_command": [],
+    "expected_materials": [
+     [
+      "MATCH",
+      "../target/demo.py",
+      "WITH",
+      "PRODUCTS",
+      "FROM",
+      "develop"
+     ],
+     [
+      "DISALLOW",
+      "*"
+     ]
+    ],
+    "expected_products": [
+     [
+      "ALLOW",
+      "../target/demo.py"
+     ],
+     [
+      "DISALLOW",
+      "*"
+     ]
+    ],
+    "name": "code-review",
+    "pubkeys": [
+     "3b5fef71093b318e0cb04316d4d9ccca4634f5e719c55c8a53ba5184925f1912"
+    ],
+    "threshold": 1
+   },
+   {
+    "_type": "step",
+    "expected_command": [
+     "python",
+     "generate_report.py"
+    ],
+    "expected_materials": [
+     [
+      "MATCH",
+      "../target/demo.py",
+      "WITH",
+      "PRODUCTS",
+      "FROM",
+      "develop"
+     ],
+     [
+      "DISALLOW",
+      "*"
+     ]
+    ],
+    "expected_products": [
+     [
+      "CREATE",
+      "../reports/jfrog-xray-report.json"
+     ],
+     [
+      "DISALLOW",
+      "*"
+     ]
+    ],
+    "name": "jfrog-xray",
+    "pubkeys": [
+     "8cf1c499916cb9e94247ec4b18b8b9670cc47fcf659116619517734b48a2ebbc"
+    ],
+    "threshold": 1
+   }
+  ]
+ }
+}
