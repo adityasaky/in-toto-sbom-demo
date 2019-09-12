@@ -58,8 +58,17 @@ def main():
           "pubkeys": [key_xray["keyid"]],
           "expected_command": ["python", "generate_report.py"],
           "threshold": 1,
-        }],
-      "inspect": [],
+        },
+      ],
+      "inspect": [{
+        "name": "check-vulnerability-report",
+        "expected_materials": [
+          ["MATCH", "../reports/jfrog-xray-report.json", "WITH", "PRODUCTS",
+            "FROM", "jfrog-xray"]
+        ],
+        "expected_products": [],
+        "run": ["python", "scripts/validate_jfrog_xray_report.py"]
+      }],
   })
 
   metadata = Metablock(signed=layout)
