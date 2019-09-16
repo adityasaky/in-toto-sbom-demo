@@ -1,0 +1,25 @@
+{
+ "signatures": [
+  {
+   "keyid": "3b5fef71093b318e0cb04316d4d9ccca4634f5e719c55c8a53ba5184925f1912",
+   "sig": "47106c0127abeb3a383ff84188debf97a1035a840250e9511dc82aa1859ce2a183dc0e8a0bc0043018816bb3ef3cc6e458bcd5dab0d86c90d111c1c29ae5c0e3b3a7cf5bcfbb6035a371fed21c28fcc9b432cd167f264a8221064285c5e2c486d30727ca57a0aeedad454754b6f65decf45146dcc5f5362f51e6f7cd8e474d6443b5fa7839ffbf7dc60dc671f74379227df0c0a8ceef7c6e934feba6fcb8fb9d4dbc9591980ad377bd672682d857601294e4ad76d99a489f218bc5582904dd0a16f203c00a7fab2ab5fe501ef2a4b6f8d3cfa6cd5573d8f0e97aae270a9f10cfb169c44dd7a05e4bd1c9f01077c0bfa0563750935bbecd108d127a62d72fdbda0ce8f954ef829145142867035de4206f52042d701dea81f156e1172a66a0b720674994d30def05fe3eb6206e0f635d556f73bff5b214f9ce65b904cd87ded05f840b590eefde5389057adc91c34e560b1b3068d2ada9b7909ec4cae93971785acb5cdcc974ecfe662922796faf0a6095c87c540195a88778225812d11991a283"
+  }
+ ],
+ "signed": {
+  "_type": "link",
+  "byproducts": {},
+  "command": [],
+  "environment": {},
+  "materials": {
+   "../dependency/demo.py": {
+    "sha256": "7ee061744f15eef91b958e0f1557861e53e9abad70a1a90ba4c24ba8b918b6b8"
+   }
+  },
+  "name": "dependency-code-review",
+  "products": {
+   "../dependency/demo.py": {
+    "sha256": "7ee061744f15eef91b958e0f1557861e53e9abad70a1a90ba4c24ba8b918b6b8"
+   }
+  }
+ }
+}

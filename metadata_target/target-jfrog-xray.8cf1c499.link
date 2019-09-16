@@ -1,0 +1,32 @@
+{
+ "signatures": [
+  {
+   "keyid": "8cf1c499916cb9e94247ec4b18b8b9670cc47fcf659116619517734b48a2ebbc",
+   "sig": "871469bf796552df5b6b87ac09005401f592f1d968f7c30d64621ed29b819a40a8b18c4a8279934b8cfbbed3fc2f9502eaff03d95e9e9f2c521958fa3487e3c8ad1efe898cc31d33db382c4d177e78b368a9eab7e8b430c91328587fa5eb9790bf893611347f392fc2c1c5a9af71788cfccfcf0aaaf7d72933ac3f350485588f0b570e02f646ffba56c9fc32ad7fc156b2129b462e5e23d3207dbda334eae04d680c35b3816a478ef3ac7b7ec1255e8c30e5811615e6b9f0109908890411dcbeaee2a3ef5f387d8d628865129798cbe4c6f9cf7a2364b7f3a2b7b14f954d61e5aa3359e7cb550340be9327921dd72e640d150b05f4abc64b092e4eadc024f83f919476b4233a8a883672bbe36907d3156b75b123c2000a5f466e553fba5e57a6446d7a4c2c6406c9b03f65fecce4edca14a54d07707c7953a88fd6b810d35f1bec2f47c1962ad8a877bbe194bbed4d61ff46ee13a2997c022b245dc7cbd852e9bddb4191da1576aa80a240ee8595bbf20250da12edf5ce597b9ee59241268600"
+  }
+ ],
+ "signed": {
+  "_type": "link",
+  "byproducts": {
+   "return-value": 0,
+   "stderr": "",
+   "stdout": ""
+  },
+  "command": [
+   "python",
+   "generate_report.py"
+  ],
+  "environment": {},
+  "materials": {
+   "../target/demo.py": {
+    "sha256": "7ee061744f15eef91b958e0f1557861e53e9abad70a1a90ba4c24ba8b918b6b8"
+   }
+  },
+  "name": "target-jfrog-xray",
+  "products": {
+   "../reports/jfrog-xray-report.json": {
+    "sha256": "76357779f8847c456893289934459f48eb01d07040818ebe6908e894e4aafad0"
+   }
+  }
+ }
+}

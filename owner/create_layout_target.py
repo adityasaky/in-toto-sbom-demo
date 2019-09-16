@@ -8,7 +8,8 @@ from in_toto.models.metadata import Metablock
 
 
 def main():
-  key_owner = import_rsa_key_from_file("owner")
+  key_owner = import_rsa_key_from_file("target_owner")
+  key_dependency_owner = import_rsa_key_from_file("dependency_owner.pub")
   key_developer = import_rsa_key_from_file("../developer/developer.pub")
   key_reviewer = import_rsa_key_from_file("../reviewer/reviewer.pub")
   key_xray = import_rsa_key_from_file("../xray/xray.pub")
@@ -19,9 +20,10 @@ def main():
           key_developer["keyid"]: key_developer,
           key_reviewer["keyid"]: key_reviewer,
           key_xray["keyid"]: key_xray,
+          key_dependency_owner["keyid"]: key_dependency_owner,
       },
       "steps": [{
-          "name": "develop",
+          "name": "target-develop",
           "expected_materials": [],
           "expected_products": [
             ["CREATE", "../target/demo.py"],
@@ -31,10 +33,10 @@ def main():
           "expected_command": [],
           "threshold": 1,
         },{
-          "name": "code-review",
+          "name": "target-code-review",
           "expected_materials": [
             ["MATCH", "../target/demo.py", "WITH", "PRODUCTS", "FROM",
-              "develop"],
+              "target-develop"],
             ["DISALLOW", "*"]
           ],
           "expected_products": [
@@ -45,10 +47,20 @@ def main():
           "expected_command": [],
           "threshold": 1,
         },{
-          "name": "jfrog-xray",
+          "name": "target-get-dependency",
+          "expected_materials": [],
+          "expected_products": [
+              ["ALLOW", "../dependency/demo.py"],
+              ["DISALLOW", "*"],
+          ],
+          "pubkeys": [key_dependency_owner["keyid"]],
+          "expected_command": [],
+          "threshold": 1,
+        }, {
+          "name": "target-jfrog-xray",
           "expected_materials": [
             ["MATCH", "../target/demo.py", "WITH", "PRODUCTS", "FROM",
-              "develop"],
+              "target-develop"],
             ["DISALLOW", "*"],
           ],
           "expected_products": [
@@ -61,13 +73,13 @@ def main():
         },
       ],
       "inspect": [{
-        "name": "check-vulnerability-report",
+        "name": "target-check-vulnerability-report",
         "expected_materials": [
           ["MATCH", "../reports/jfrog-xray-report.json", "WITH", "PRODUCTS",
-            "FROM", "jfrog-xray"]
+            "FROM", "target-jfrog-xray"],
         ],
         "expected_products": [],
-        "run": ["python", "scripts/validate_jfrog_xray_report.py"]
+        "run": ["python", "scripts/validate_jfrog_xray_report.py"],
       }],
   })
 
@@ -75,7 +87,7 @@ def main():
 
   # Sign and dump layout to "root.layout"
   metadata.sign(key_owner)
-  metadata.dump("../metadata/root.layout")
+  metadata.dump("../metadata_target/root.layout")
 
 if __name__ == '__main__':
   main()

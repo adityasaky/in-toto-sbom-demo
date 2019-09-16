@@ -1,0 +1,21 @@
+{
+ "signatures": [
+  {
+   "keyid": "c1aef77ec90ba730070e1b8cbc39d97d91a73456cc3b658d01843f721b09baff",
+   "sig": "9cc22b5a643dd9dd170edbbaea483a1c34237032df084c1e08c371dcb592d9b0bcd23946e2f9b38c187c28a3f9985616dfde65a2cdc8dbc9df124bbb12eff8c77f39e06016a42fef15bab9dbba8cb9e0d431d99ef10cb0faf6d129e184730000b4d7b21d9cbdd44416dbcb5370bab0dca438caa31885a7059813741f8527db68331fafa2a912c6c214dfaa0fc7a7670f99ef396634ba19f0f52f92ae7923b0ac85f0cabfa5ea9b98506a781242767c79ec9554d407fb27ffed76d44c2581f83fce0d5ae74eccb38507fa2e0f5d8b67eededd7b97e26dfc86f635d6dc5fe1f907ff47f502f3b253bc7b4f27d97d61ff6b684e96e315783ac98c1a9b218c5f9fc6dbf933f7f22d0f360e7ab190661991191aeec5c0ec921cad9dafcce50eaed9790ffdad7d2b328678c2bc281b43fb2c5f9e617325a77a94ad82521bd97f9de8afaa34b49e649257a8367317d17281301d39a150508666fb47335ea20eec2756fb328b79404aed4a290390c52ada926a7abe1e1c7c996ed1cf34cb16a16724cd38"
+  }
+ ],
+ "signed": {
+  "_type": "link",
+  "byproducts": {},
+  "command": [],
+  "environment": {},
+  "materials": {},
+  "name": "target-get-dependency",
+  "products": {
+   "../dependency/demo.py": {
+    "sha256": "7ee061744f15eef91b958e0f1557861e53e9abad70a1a90ba4c24ba8b918b6b8"
+   }
+  }
+ }
+}

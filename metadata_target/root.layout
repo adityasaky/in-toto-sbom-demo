@@ -1,13 +1,13 @@
 {
  "signatures": [
   {
-   "keyid": "56193568c300352bb1aeacf574f3361e11c13d2ff4f0a09c5a5c9803e8ad29a0",
-   "sig": "312c833107fc310bb1441227ce9ff0cb614aaae01ddc21087e512a9b38139f68f594aaeac7234489add1e1510dd5d8dee3526fe4acfb31f69a7127a953fccf0cc3e23c26d70b718fb5412ed3d89010542000237d8e67ccc3ea69c43e79321df857fdf8eb55c9b94600d9f30b7ad2f30c4710025921aadc37846f404e6ee227a379377cbe7d8c373db8957a1888c5b61dfc935f1176aea33fb1b8ca838497ef67ca13cb886ec391c4b4538ce5005cc862cdb739e415633e82865689637ca221f5b761132372865a319726b355932d1b63b3509af5dc79fe0edce670f2cec29b8e5326c1f4a459381430f0132d651987b851958799899fa60f189f69b5ce07292b7c448fe33930d14dcaeedcec827234795e5995e2a30f2f2a7968ffca1204c1f5066988945d01cb0750d4feb81fa8780536a90cd09bbf60069dd9cf97b0ab6c31a7f704a5a5ffcb85e7881543e2c2d28dc119c2685bcc2688a2d4ef9c5959ced437de171ba357b75947a630204fb40b185cdaf49625897b140c534b387281ba01"
+   "keyid": "591923f5fa31c24c9c6d4394e0bb9420b7bbdbb61e78182ea8ac4798488df724",
+   "sig": "13e58a562f96e18469ff63324217744a9fe6b7f3c7fa965792b2ffa3ce42161bbed525078737e5f864cbed35411b9dee4eda04b3166e8a99f9b22ac8175a8e8a82fff6d8070134d6ecdcc21e739787979cd2ddcdb9240ce9d61fb2e49dc8656af7c036cac311cf64724812bd32eaa7608569d6d32d21aa446658b0e4427f615649c57457c5d9771a6e82de5ec9d845f4fc33bc80606d2e243a16e2e0b5d97690e8c1fa539a8decea7809356eb0ba7792e91559ffeaa9764827baf00bf2fe29a276d7f3a24160874032da1170b57096bcdc75f1c148eed3852c2c94e2c541a4d6a03ad82e49d7c98c31a600dc196935e369f0570b4a904f31d5df9bfdaa686c6e99d8354083b4526f06330dbd162ba7182672762c765a98889530d25f7364f6a302aef0ce2099ac2a6d207c8c30d1499089c366eadd436ad2714e2abde461020b3bf47c0a5a40f428896b356c66d5efeb7b5a91e4e0dad08af5345286091a07ca4115ffbbd57e8bfa0a0872dce45e7df8d61df8017fd7239c053f7ee59fb38865"
   }
  ],
  "signed": {
   "_type": "layout",
-  "expires": "2019-10-12T16:59:02Z",
+  "expires": "2019-10-16T12:24:28Z",
   "inspect": [
    {
     "_type": "inspection",
@@ -18,11 +18,11 @@
       "WITH",
       "PRODUCTS",
       "FROM",
-      "jfrog-xray"
+      "target-jfrog-xray"
      ]
     ],
     "expected_products": [],
-    "name": "check-vulnerability-report",
+    "name": "target-check-vulnerability-report",
     "run": [
      "python",
      "scripts/validate_jfrog_xray_report.py"
@@ -68,6 +68,19 @@
      "public": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA2a8MdJYPtOwlscRjbv4i\nyhgQZzDpdkTfcDDVBWgm2OgjkpH11FtmhL7ROvMhGXhBialxFTwDJcQz9/axQSy2\nBVioBvwx/kTQLnPsQQBhupW7Pj5bEx/RU90RJQ0yNB4zSYPnRXU7S9iGTlJ21Inr\nm+Hkk+Yzd9PDYCXbTEVqhT3oYnP55vnoKSF7XxHvlIw2e8smo/4SavvlyxUb6BpM\noeCFc4Ds7buRny4GnrF5ZtEKuZ0/oKGsZHXLBsvfYzg+u18OAFm25TTOOYe4WMcg\nhZnRNHWVA729xnUyFdr54+o5mpw3YRAj/fjInch13fQc7LYq19jQUQGwqqZ5z8pg\nanm5ZFvBBej3zIxd6AWPIzYuTSvy6DCrNFmg9NRlnZmrslKa+0Hcot9Rva2AGXkK\nhezE2lASYG13NYs+vC0d4+rQDNNX86lPDJxw24ucbk1cpL33X2iFZgm8bPFfzlEI\nsD+CRZrg0Vxaa0/UtkbTHtgOq5aTlt1QuziIKkS2ZwqjAgMBAAE=\n-----END PUBLIC KEY-----"
     },
     "scheme": "rsassa-pss-sha256"
+   },
+   "c1aef77ec90ba730070e1b8cbc39d97d91a73456cc3b658d01843f721b09baff": {
+    "keyid": "c1aef77ec90ba730070e1b8cbc39d97d91a73456cc3b658d01843f721b09baff",
+    "keyid_hash_algorithms": [
+     "sha256",
+     "sha512"
+    ],
+    "keytype": "rsa",
+    "keyval": {
+     "private": "",
+     "public": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAqy/0+6RPAKT1umgUKM2I\nhmna5GBFD1TdpJ3STXj6QkPozcmF4v+9v+3Wp132nUgXRIyZ7r6geW77RYnUFgR7\nGQDmOgtlu4wmChNnrUWjic6VqXtHFaOCxIyFyW3a4ijdZamGRjSG3rN7hSpkAqhw\nmXCgreB+6tWbNSCy70X7jI9l2vU/IT/4rXu8Q1WYZ53iqOvuGU/ndIRhBb4IAIcw\nfcDkv2hkJjCA7+nmwl2XfnVrNn9FwuLJwmMv0ji4pchs/NS13vknyM7qg8eofaTu\ntx2+W6JN1baj8S6fiJ3JKx07y89C0vqB5DTnBJRYNulr+FNTRCyXKpVlBcf52Sri\nuTJA7xpTVZm1cugMnPolbNFmw5+ak/pJwIEovpXF8Ph8oSXaWFMBwgrgWy1jvzsA\nM7I+4F5LaUR0flYlsDI2pJzCRe3vL7KW4ioua30bzw3ryVfZE5sdWpAUbJ7v9sk4\nkv1xLpE64jwXjz/0QSs3hfpwgPAAnmcwt3bVib2bvyH/AgMBAAE=\n-----END PUBLIC KEY-----"
+    },
+    "scheme": "rsassa-pss-sha256"
    }
   },
   "readme": "",
@@ -86,7 +99,7 @@
       "*"
      ]
     ],
-    "name": "develop",
+    "name": "target-develop",
     "pubkeys": [
      "7cedd7de3bcd11f6d682195f650f8c678054ae4a30457743156c97252a468360"
     ],
@@ -102,7 +115,7 @@
       "WITH",
       "PRODUCTS",
       "FROM",
-      "develop"
+      "target-develop"
      ],
      [
       "DISALLOW",
@@ -119,9 +132,29 @@
       "*"
      ]
     ],
-    "name": "code-review",
+    "name": "target-code-review",
     "pubkeys": [
      "3b5fef71093b318e0cb04316d4d9ccca4634f5e719c55c8a53ba5184925f1912"
+    ],
+    "threshold": 1
+   },
+   {
+    "_type": "step",
+    "expected_command": [],
+    "expected_materials": [],
+    "expected_products": [
+     [
+      "ALLOW",
+      "../dependency/demo.py"
+     ],
+     [
+      "DISALLOW",
+      "*"
+     ]
+    ],
+    "name": "target-get-dependency",
+    "pubkeys": [
+     "c1aef77ec90ba730070e1b8cbc39d97d91a73456cc3b658d01843f721b09baff"
     ],
     "threshold": 1
    },
@@ -138,7 +171,7 @@
       "WITH",
       "PRODUCTS",
       "FROM",
-      "develop"
+      "target-develop"
      ],
      [
       "DISALLOW",
@@ -155,7 +188,7 @@
       "*"
      ]
     ],
-    "name": "jfrog-xray",
+    "name": "target-jfrog-xray",
     "pubkeys": [
      "8cf1c499916cb9e94247ec4b18b8b9670cc47fcf659116619517734b48a2ebbc"
     ],
