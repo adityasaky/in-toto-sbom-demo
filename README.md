@@ -34,28 +34,30 @@ The SBoM must contain cryptographic information about the software. Integrity
 also applies to the SBoM itself - it should be possible to validate the
 integrity of the SBoM metadata.
 
-in-toto's specification already allows for all of these (except for how to
-trust the delivery of in-toto metadata itself, which can be handled using TUF).
-It is therefore a matter of how in-toto is implemented in a software supply
-chain and what aspects of it is recorded. In this demo, we show that the
-existing in-toto tooling is up to the task of generating verifiable SBoMs. 
+in-toto's specification provides semantics that allow for all of these. It is
+therefore a matter of how in-toto is implemented in a software supply chain and
+what aspects of the supply chain are recorded. In this demo, we show that the
+existing in-toto tooling is capable of generating verifiable SBoMs.
 
-### Overview of the demo supply chain
+### Overview of the demo supply chains
 
-We have a project owner, a developer, a code reviewer, and a vulnerability
+We have two project owners, a developer, a code reviewer, and a vulnerability
 scanner (which generates reports ike those of JFrog Xray). Steps are defined for
-each role except the project owner who instead creates the
+each role except the project owners who instead create the
 [layout](https://github.com/adityasaky/in-toto-sbom-demo/blob/master/metadata/root.layout)
-for the entire supply chain. Link metadata must be generated for each step and
-signed by the authorized functionary, or `in-toto-verify` will fail to validate
-the supply chain.
+for the supply chains. Link metadata must be generated for each step and signed
+by the authorized functionary, or `in-toto-verify` will fail to validate the
+supply chain.
+
+![Demo Supply Chains](misc/in-toto-sbom-supply-chains.png)
 
 ### Download and setup in-toto on \*NIX (Linux, OS X, ..)
 __Virtual Environments (optional)__
 
-We highly recommend to install `in-toto` and its dependencies in a
-[`virtualenv`](https://virtualenv.pypa.io/en/stable/). Just copy-paste the
-following snippet to install [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/en/latest/) and create a virtual environment:
+We highly recommend you install `in-toto` and its dependencies in a python
+virtual environment. The following snippet installs
+[`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/en/latest/)
+and creates a virtual environment:
 
 ```bash
 # Install virtualenvwrapper
@@ -132,8 +134,8 @@ in-toto-run --step-name target-develop --products ../target/demo.py --key develo
 in-toto-run --step-name dependency-develop --products ../dependency/demo.py --key developer --no-command
 ```
 
-This generates signed link metadata in the developer's folder, which we copy to
-the metadata folder in the project root.
+This generates signed link metadata in the developer's folder, which we move to
+the metadata folders in the repository root.
 
 ```bash
 mv target-develop.7cedd7de.link ../metadata_target/
@@ -152,8 +154,8 @@ in-toto-run --step-name target-code-review --materials ../target/demo.py --produ
 in-toto-run --step-name dependency-code-review --materials ../dependency/demo.py --products ../dependency/demo.py --key reviewer --no-command
 ```
 
-This generates signed link metadata in the reviewer's folder, which we copy to
-the metadata folder in the project root.
+This generates signed link metadata in the reviewer's folder, which we move to
+the metadata folders in the repository root.
 
 ```bash
 mv target-code-review.3b5fef71.link ../metadata_target/
@@ -172,8 +174,8 @@ in-toto-run --step-name target-jfrog-xray --key xray --products ../reports/jfrog
 ```
 
 The script generates a JSON file called `jfrog-xray-report.json` in the reports
-folder in the project root. The step generates signed link metadata in the
-xray folder, which we copy to the metadata folder in the project root.
+folder in the repository root. The step generates signed link metadata in the
+xray folder, which we move to the metadata folder in the repository root.
 
 ```bash
 mv target-jfrog-xray.8cf1c499.link ../metadata_target/
