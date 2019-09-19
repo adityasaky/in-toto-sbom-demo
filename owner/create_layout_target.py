@@ -72,15 +72,28 @@ def main():
           "threshold": 1,
         },
       ],
-      "inspect": [{
-        "name": "target-check-vulnerability-report",
-        "expected_materials": [
-          ["MATCH", "../reports/jfrog-xray-report.json", "WITH", "PRODUCTS",
-            "FROM", "target-jfrog-xray"],
-        ],
-        "expected_products": [],
-        "run": ["python", "scripts/validate_jfrog_xray_report.py"],
-      }],
+      "inspect": [
+        {
+          "name": "target-scan-dependency",
+          "expected_materials": [
+            ["MATCH", "../dependency/demo.py", "WITH", "PRODUCTS", "FROM",
+              "target-get-dependency"],
+            ["DISALLOW", "*"],
+          ],
+          "expected_products": [
+            ["DISALLOW", "*"],
+          ],
+          "run": ["python", "scripts/validate_dependency.py"],
+        }, {
+          "name": "target-check-vulnerability-report",
+          "expected_materials": [
+            ["MATCH", "../reports/jfrog-xray-report.json", "WITH", "PRODUCTS",
+              "FROM", "target-jfrog-xray"],
+            ],
+          "expected_products": [],
+          "run": ["python", "scripts/validate_jfrog_xray_report.py"],
+        },
+      ],
   })
 
   metadata = Metablock(signed=layout)

@@ -4,7 +4,7 @@ import datetime
 
 # Currently a dummy report generated using the sample report from
 # https://www.jfrog.com/confluence/display/XRAY1X/Xray+REST+API#XrayRESTAPI-GetSecurityReport
-
+# This report indicates a vulnerability with the target package itself
 report = {
   "recent_vulnerabilities": {
     "2019-08-29": 1

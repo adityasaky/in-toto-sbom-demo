@@ -1,0 +1,45 @@
+{
+ "signatures": [],
+ "signed": {
+  "_type": "link",
+  "byproducts": {
+   "return-value": 0,
+   "stderr": "",
+   "stdout": ""
+  },
+  "command": [
+   "python",
+   "scripts/validate_dependency.py"
+  ],
+  "environment": {},
+  "materials": {
+   "root.layout": {
+    "sha256": "03bf14c1c793c9b33a5364f09eb7eb4259c7a99e88bce24d3b5d936cd26b98dc"
+   },
+   "scripts/validate_dependency.py": {
+    "sha256": "a13e3d1e68f9b9ce0355c55143d2af4efe3370865fdc54da2e3e31f617b44d61"
+   },
+   "scripts/validate_jfrog_xray_report.py": {
+    "sha256": "4bb0223f04db9ddce6b9f1e63017746bb372f3fc5f5face3f9cf84adee683f26"
+   },
+   "target-get-dependency.c1aef77e/root.layout": {
+    "sha256": "a23ba3cd724392987408c366e5cc389ee3a2c0adbdef89ec5d50318907326ee5"
+   }
+  },
+  "name": "target-scan-dependency",
+  "products": {
+   "root.layout": {
+    "sha256": "03bf14c1c793c9b33a5364f09eb7eb4259c7a99e88bce24d3b5d936cd26b98dc"
+   },
+   "scripts/validate_dependency.py": {
+    "sha256": "a13e3d1e68f9b9ce0355c55143d2af4efe3370865fdc54da2e3e31f617b44d61"
+   },
+   "scripts/validate_jfrog_xray_report.py": {
+    "sha256": "4bb0223f04db9ddce6b9f1e63017746bb372f3fc5f5face3f9cf84adee683f26"
+   },
+   "target-get-dependency.c1aef77e/root.layout": {
+    "sha256": "a23ba3cd724392987408c366e5cc389ee3a2c0adbdef89ec5d50318907326ee5"
+   }
+  }
+ }
+}

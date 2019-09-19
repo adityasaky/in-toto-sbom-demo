@@ -2,13 +2,41 @@
  "signatures": [
   {
    "keyid": "591923f5fa31c24c9c6d4394e0bb9420b7bbdbb61e78182ea8ac4798488df724",
-   "sig": "13e58a562f96e18469ff63324217744a9fe6b7f3c7fa965792b2ffa3ce42161bbed525078737e5f864cbed35411b9dee4eda04b3166e8a99f9b22ac8175a8e8a82fff6d8070134d6ecdcc21e739787979cd2ddcdb9240ce9d61fb2e49dc8656af7c036cac311cf64724812bd32eaa7608569d6d32d21aa446658b0e4427f615649c57457c5d9771a6e82de5ec9d845f4fc33bc80606d2e243a16e2e0b5d97690e8c1fa539a8decea7809356eb0ba7792e91559ffeaa9764827baf00bf2fe29a276d7f3a24160874032da1170b57096bcdc75f1c148eed3852c2c94e2c541a4d6a03ad82e49d7c98c31a600dc196935e369f0570b4a904f31d5df9bfdaa686c6e99d8354083b4526f06330dbd162ba7182672762c765a98889530d25f7364f6a302aef0ce2099ac2a6d207c8c30d1499089c366eadd436ad2714e2abde461020b3bf47c0a5a40f428896b356c66d5efeb7b5a91e4e0dad08af5345286091a07ca4115ffbbd57e8bfa0a0872dce45e7df8d61df8017fd7239c053f7ee59fb38865"
+   "sig": "7819fbf0175dbbaa11058f186e566e164857667bf8dd2a8507d6f73dfbe12d6eb68f2f33770707913763129c652c73f756b875c6557bb369bff37772881cf62dbeafa9ea9f41c6dd8080b86c251f6fa9fb3f54dadb4365500172be26be9439a362111658c6db5978065d5e4a73738f2e7abaff8437ac2ce725fc66e0aecf36a24f200bf5f3a50d5571c1a14edc305f09aa55d046837f118883c6e8be14a600c5c53c65061e4c61411ea1a19b138c852c931d61ec99947657073e682ce059e5a90cce9c38400fb404722d53ca42d732cc4dd8192336e171ec1425a72d034134a1cbb7b9e8d53ab8e4c31b35445b9aefaa1fc6c69079d96271e10b26a71d1c5a4b100df772ea83bc8eefa7ae64a7b848007356ba583e8d2412f367086a12ccca2977039d5a209b7beea39ae14b735da23ede4661d743299da3517fb5986c344de5f8dbf2c01f76691decea87226494d17439802140f5a06aecc31af802a7e0498e91d622ba9f022c5126c544981e49e004f37ca77d6d335e8311eec78e311ec2cb"
   }
  ],
  "signed": {
   "_type": "layout",
-  "expires": "2019-10-16T12:24:28Z",
+  "expires": "2019-10-19T15:59:39Z",
   "inspect": [
+   {
+    "_type": "inspection",
+    "expected_materials": [
+     [
+      "MATCH",
+      "../dependency/demo.py",
+      "WITH",
+      "PRODUCTS",
+      "FROM",
+      "target-get-dependency"
+     ],
+     [
+      "DISALLOW",
+      "*"
+     ]
+    ],
+    "expected_products": [
+     [
+      "DISALLOW",
+      "*"
+     ]
+    ],
+    "name": "target-scan-dependency",
+    "run": [
+     "python",
+     "scripts/validate_dependency.py"
+    ]
+   },
    {
     "_type": "inspection",
     "expected_materials": [
